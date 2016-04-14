@@ -6,6 +6,9 @@ LB <- data.frame(especie= c(1:30),X=label$X[label$categoria=="base"], Y=label$Y[
 amostra<-sample(LB[,1], size=15, replace=FALSE))
 LB[LB[,1]!=amostra, c(2,3)]
 
+LB$especie[-(amostra)]
+
+
 LB[LB[,1]-[amostra],c(2,3)]
 
 
