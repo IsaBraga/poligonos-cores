@@ -87,3 +87,7 @@ ifelse (is.null(int_original),
 
 
 abline(v=valor_original, col="red")
+
+
+conf<-quantile(resulta, prob=c(0.025, 0.975))
+abline(v=conf, col="green")
